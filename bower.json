@@ -1,0 +1,43 @@
+{
+  "name": "OrderCloud UI",
+  "version": "0.0.1",
+  "devDependencies": {
+    "angular-mocks": "~1.4.0",
+    "angular-ui-utils": "~0.2.3"
+  },
+  "homepage": "https://github.com/Four51/OrderCloud-UI-AngularJS",
+  "authors": [
+    "Rob Watt <rwatt@four51.com>"
+  ],
+  "description": "OrderCloud UI Distribution File",
+  "main": "dist/ordercloud-ui-angularjs.min.js",
+  "keywords": [
+    "ordercloud",
+    "ui",
+    "modals",
+    "dropdowns",
+    "datepicker",
+    "validate"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "src",
+    "karma",
+    "vendor",
+    "!dist/vendor",
+    "test",
+    "tests",
+    ".bower.json",
+    ".bowerrc",
+    ".gitignore",
+    ".gitmodules",
+    "bower.json",
+    "build.config.js",
+    "Gruntfile.js",
+    "module.prefix",
+    "module.suffix",
+    "package.json"
+  ]
+}
