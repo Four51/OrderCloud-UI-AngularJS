@@ -4,6 +4,7 @@ angular.module('orderCloud.ui', [
 	'orderCloud.dateparser',
 	'orderCloud.validate',
 	'orderCloud.modal',
+	'orderCloud.typeahead',
 	'orderCloud.dropdown',
 	'orderCloud.position',
 	'ui.utils'

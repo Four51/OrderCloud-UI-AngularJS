@@ -1,0 +1,27 @@
+ul.typeahead-menu{
+  position: absolute;
+  top: 102%;
+  left: 0;
+  float:left;
+  width:100%;
+  margin:0;
+  padding:(@am-root-padding * 0.2em) 0;
+  z-index: 4;
+  max-height:~'calc(100vh - 300px)';
+  overflow-y: auto;
+  list-style:none;
+  border:1px solid @am-clr-btn-bdr;
+  border-radius: 3px;
+  background-color:@am-clr-white;
+  li, a {
+	cursor: pointer;
+	font-size:0.8em;
+	padding:(@am-root-padding * 0.2em) @am-root-padding;
+	&.active,
+	&:active,
+	&:focus,
+	&:hover, {
+	  background-color:@am-clr-link-focus-bg;
+	}
+  }
+}
