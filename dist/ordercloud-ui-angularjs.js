@@ -1,5 +1,5 @@
 /**
- * ordercloud-ui-angularjs - v0.0.4 - 2015-06-18
+ * ordercloud-ui-angularjs - v0.0.5 - 2015-06-18
  * https://github.com/Four51/OrderCloud-UI-AngularJS
  *
  * Copyright (c) 2015 Robert Watt @ Four51, Inc.
@@ -2909,6 +2909,7 @@ angular.module('orderCloud.ui', [
 	'orderCloud.typeahead',
 	'orderCloud.dropdown',
 	'orderCloud.position',
+	'orderCloud.alerts',
 	'ui.utils'
 ])
 ;

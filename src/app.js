@@ -7,6 +7,7 @@ angular.module('orderCloud.ui', [
 	'orderCloud.typeahead',
 	'orderCloud.dropdown',
 	'orderCloud.position',
+	'orderCloud.alerts',
 	'ui.utils'
 ])
 ;
