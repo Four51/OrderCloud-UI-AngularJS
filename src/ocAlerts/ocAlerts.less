@@ -1,0 +1,279 @@
+
+// Variables
+@alert-shadow-black: 	@am-clr-black;
+@alert-shadow-grey: 	@am-palette-18;
+
+@alert-text-color:		@am-clr-white;
+
+@alert-success-bg:		@am-palette-10;
+@alert-success-icon:	@fa-var-check;
+@alert-success-color:	@alert-text-color;
+
+@alert-error-bg:		@am-palette-1;
+@alert-error-icon:		@fa-var-exclamation;
+@alert-error-color:		@alert-text-color;
+
+@alert-info-bg:			@am-palette-6;
+@alert-info-icon:		@fa-var-info;
+@alert-info-color:		@alert-text-color;
+
+@alert-warning-bg:		@am-palette-16;
+@alert-warning-icon: 	@fa-var-exclamation-triangle;
+@alert-warning-color:	@alert-text-color;
+
+// Styles
+.alert-title {
+  font-weight: bold;
+  font-size:0.9em;
+  margin-bottom:-5px;
+}
+
+.alert-message {
+  word-wrap: break-word;
+  font-size:0.8em;
+  a,
+  label {
+    color: @alert-text-color;
+  }
+
+  a:hover {
+    color: darken(@alert-text-color, 15);
+    text-decoration: none;
+  }
+}
+
+.toast-close-button {
+  position: relative;
+  right: -0.3em;
+  top: -0.3em;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: @alert-text-color;
+  text-shadow: 0 1px 0 @alert-text-color;
+  opacity: 0.8;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.4;
+  }
+}
+
+/*Additional properties for button version
+ iOS requires the button element instead of an anchor tag.
+ If you want the anchor version, it requires `href="#"`.*/
+button.toast-close-button {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+//#endregion
+.alert-center {
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  display:flex;
+  align-content:center;
+  align-items:center;
+  justify-content:center;
+  & > div {
+    position:static;
+    &:before {
+      z-index:-10;
+      display:block;
+      position:absolute;
+      left:0;
+      right:0;
+      top:0;
+      bottom:0;
+      content:' ';
+      background-color:fade(@alert-text-color, 60);
+    }
+  }
+}
+
+.alert-top-center {
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.alert-bottom-center {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.alert-top-full-width {
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.alert-bottom-full-width {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.alert-top-left {
+  top: 12px;
+  left: 12px;
+}
+
+.alert-top-right {
+  top: 12px;
+  right: 12px;
+}
+
+.alert-bottom-right {
+  right: 12px;
+  bottom: 12px;
+}
+
+.alert-bottom-left {
+  bottom: 12px;
+  left: 12px;
+}
+
+#alert-container {
+  position: fixed;
+  z-index: 999999;
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  > div {
+    margin: 0 0 6px;
+    padding: 15px;
+    width: 300px;
+    border-radius:3px;
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 12px @alert-shadow-grey;
+    opacity: 0.8;
+  }
+
+  > :hover {
+    box-shadow: 0 0 12px @alert-shadow-black;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  /*overrides*/
+  &.alert-top-full-width > div,
+  &.alert-bottom-full-width > div {
+    width: 96%;
+    margin: auto;
+  }
+
+  &.alert-top-center > div,
+  &.alert-bottom-center > div {
+    width: 300px;
+    margin: auto;
+  }
+}
+
+.alert {
+  position:relative;
+  display:flex;
+  flex-flow:row nowrap;
+  & > i {
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    &.alert-success{
+      color:@alert-success-color;
+      &:before { content:@alert-success-icon; }
+    }
+    &.alert-error{
+      color:@alert-error-color;
+      &:before { content:@alert-error-icon; }
+    }
+    &.alert-info{
+      color:@alert-info-color;
+      &:before { content:@alert-info-icon; }
+    }
+    &.alert-warning{
+      color:@alert-warning-color;
+      &:before { content: @alert-warning-icon; }
+    }
+  }
+  & > [ng-switch] {
+    flex:5;
+  }
+}
+
+.alert-success {
+  background-color: @alert-success-bg;
+  & > div {
+    color:@alert-success-color;
+  }
+}
+
+.alert-error {
+  background-color: @alert-error-bg;
+  & > div {
+    color:@alert-error-color;
+  }
+}
+
+.alert-info {
+  background-color: @alert-info-bg;
+  & > div {
+    color:@alert-info-color;
+  }
+}
+
+.alert-warning {
+  background-color: @alert-warning-bg;
+  & > div {
+    color:@alert-warning-color;
+  }
+}
+
+/*Animations*/
+.alert {
+  opacity: 1 !important;
+}
+
+.alert.ng-enter {
+  opacity: 0 !important;
+  transition: opacity .3s linear;
+}
+
+.alert.ng-enter.ng-enter-active {
+  opacity: 1 !important;
+}
+
+.alert.ng-leave {
+  opacity: 1;
+  transition: opacity .3s linear;
+}
+
+.alert.ng-leave.ng-leave-active {
+  opacity: 0 !important;
+}
+
+
+/*Responsive Design*/
+@media(orientation: portrait) {
+  #alert-container {
+    left:12px;
+    right:12px;
+    & > div {
+      margin:0 auto 6px;
+      padding: 8px;
+    }
+  }
+}

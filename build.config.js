@@ -55,7 +55,8 @@ module.exports = {
 	 */
 	vendor_files: {
 		js: [
-			'vendor/angular-ui-utils/ui-utils.js'
+			'vendor/angular-ui-utils/ui-utils.js',
+			'vendor/angular-toastr/dist/angular-toastr.js'
 		],
 		less: [
 		],
