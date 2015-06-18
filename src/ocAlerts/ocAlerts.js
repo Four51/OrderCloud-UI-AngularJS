@@ -50,7 +50,7 @@ function AlertConfig(toastrConfig) {
 			toast: 'alerts/alerts.tpl.html'
 			//progressbar: 'directives/progressbar/progressbar.html'
 		},
-		timeOut: 500,
+		timeOut: 5000,
 		titleClass: 'alert-title',
 		toastClass: 'alert'
 	});

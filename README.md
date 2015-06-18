@@ -1,4 +1,4 @@
-# OrderCloud UI AngularJS 0.0.5
+# OrderCloud UI AngularJS 0.0.6
 An AngularJS UI suite for OrderCloud
 ***
 
@@ -17,7 +17,6 @@ Or include the output in the dist folder directly in your project.
 ## Resources
 
 ***
-
 ### User
 
 ***

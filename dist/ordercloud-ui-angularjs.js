@@ -1,5 +1,5 @@
 /**
- * ordercloud-ui-angularjs - v0.0.5 - 2015-06-18
+ * ordercloud-ui-angularjs - v0.0.6 - 2015-06-18
  * https://github.com/Four51/OrderCloud-UI-AngularJS
  *
  * Copyright (c) 2015 Robert Watt @ Four51, Inc.
@@ -2966,7 +2966,7 @@ function AlertConfig(toastrConfig) {
 			toast: 'alerts/alerts.tpl.html'
 			//progressbar: 'directives/progressbar/progressbar.html'
 		},
-		timeOut: 500,
+		timeOut: 5000,
 		titleClass: 'alert-title',
 		toastClass: 'alert'
 	});
