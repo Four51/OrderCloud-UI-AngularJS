@@ -1,5 +1,5 @@
 /**
- * ordercloud-ui-angularjs - v0.0.6 - 2015-06-18
+ * ordercloud-ui-angularjs - v0.0.6 - 2015-07-24
  * https://github.com/Four51/OrderCloud-UI-AngularJS
  *
  * Copyright (c) 2015 Robert Watt @ Four51, Inc.
@@ -5263,6 +5263,7 @@ angular.module('orderCloud.typeahead', ['orderCloud.typeahead.tpls', 'orderCloud
 
 						// if there's nothing selected (i.e. focusFirst) and enter is hit, don't do anything
 						if (scope.activeIdx == -1 && (evt.which === 13 || evt.which === 9)) {
+							resetMatches();
 							return;
 						}
 

@@ -287,6 +287,7 @@ angular.module('orderCloud.typeahead', ['orderCloud.typeahead.tpls', 'orderCloud
 
 						// if there's nothing selected (i.e. focusFirst) and enter is hit, don't do anything
 						if (scope.activeIdx == -1 && (evt.which === 13 || evt.which === 9)) {
+							resetMatches();
 							return;
 						}
 
