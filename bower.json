@@ -1,6 +1,6 @@
 {
   "name": "OrderCloud UI",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "devDependencies": {
     "angular-mocks": "~1.4.0",
     "angular-ui-utils": "~0.2.3",

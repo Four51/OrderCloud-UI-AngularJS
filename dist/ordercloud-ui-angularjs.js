@@ -1,5 +1,5 @@
 /**
- * ordercloud-ui-angularjs - v0.0.6 - 2015-07-24
+ * ordercloud-ui-angularjs - v0.0.7 - 2015-07-24
  * https://github.com/Four51/OrderCloud-UI-AngularJS
  *
  * Copyright (c) 2015 Robert Watt @ Four51, Inc.

@@ -1,7 +1,7 @@
 {
 	"author": "Robert Watt @ Four51, Inc.",
 	"name": "ordercloud-ui-angularjs",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"homepage": "https://github.com/Four51/OrderCloud-UI-AngularJS",
 	"licenses": {
 		"type": "MIT",

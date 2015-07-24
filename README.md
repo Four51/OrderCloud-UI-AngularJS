@@ -1,4 +1,4 @@
-# OrderCloud UI AngularJS 0.0.6
+# OrderCloud UI AngularJS 0.0.7
 An AngularJS UI suite for OrderCloud
 ***
 
